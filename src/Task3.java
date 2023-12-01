@@ -2,9 +2,8 @@ import java.util.Scanner;
 public class Task3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-
-        int month = InputHelper.getRangedInt(scan, "Enter your birth month", 1, 12);
         int year = InputHelper.getRangedInt(scan, "Enter your birth year", 1950, 2010);
+        int month = InputHelper.getRangedInt(scan, "Enter your birth month", 1, 12);
         int hour = InputHelper.getRangedInt(scan, "Enter your birth hour", 1, 24);
         int minute = InputHelper.getRangedInt(scan, "Enter your birth minute", 1, 59);
         int day;
@@ -17,6 +16,11 @@ public class Task3 {
         else {
             day = InputHelper.getRangedInt(scan, "Enter your birth day", 1, 30);
         }
+        System.out.printf("\n%-10s%5d", "Year:", year);
+        System.out.printf("\n%-10s%5d", "Month:", month);
+        System.out.printf("\n%-10s%5d", "Day:", day);
+        System.out.printf("\n%-10s%5d", "Hour:", hour);
+        System.out.printf("\n%-10s%5d", "Minute:", minute);
 
     }
 }

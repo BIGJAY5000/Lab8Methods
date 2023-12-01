@@ -3,7 +3,8 @@ public class InputHelper {
     public static void main(String[] args) {
         //Test Method
         Scanner scan = new Scanner(System.in);
-        boolean done = getYNConfirm(scan, "Please enter YN");
+
+        prettyHeader("Cum on my penis whore");
     }
 
     //This method loops until a valid integer input is received. Returns int value.
@@ -158,5 +159,35 @@ public class InputHelper {
             }
         } while (!done);
         return input;
+    }
+    public static void prettyHeader(String msg){
+        String x = "";
+        int y = msg.length();
+        int z = (54 - y)/2;
+        int a = 0;
+        for (int i = 0; i <= 60; i++) {
+            x += "*";
+        }
+        System.out.println(x);
+        x = "";
+
+        for (int j = 0; j <=60; j++) {
+            if (j < 3 || j > 57) {
+                x += "*";
+            } else if (j > z+3 && j < 57-z) {
+                x += (msg.substring(a, a + 1));
+                a++;
+            }
+            else {
+                x += " ";
+            }
+        }
+        System.out.println(x);
+
+        x = "";
+        for (int k = 0; k <= 60; k++) {
+            x += "*";
+        }
+        System.out.println(x);
     }
 }
