@@ -4,7 +4,7 @@ public class InputHelper {
         //Test Method
         Scanner scan = new Scanner(System.in);
 
-        prettyHeader("Cum on my penis whore");
+        prettyHeader("HI HAVE A GREAT DAY");
     }
 
     //This method loops until a valid integer input is received. Returns int value.
